@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Terrorism Heatmap</title>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+</head>
+<body>
+    <h1 style="text-align: center;">Global Terrorism - MENA Region</h1>
+    <h2 style="text-align: center;">Terrorism Heatmap</h2>
+    
+    <div style="text-align: center; margin-bottom: 10px;">
+        <label for="yearSlider">Select Year:</label>
+        <input type="range" id="yearSlider" min="1970" max="2020" step="1" value="2019">
+        <span id="sliderValue">2019</span>
+    </div>
+
+    <div style="display: flex; justify-content: center;">
+        <div id="mapContainer"></div>
+    </div>
+    <div style="display: flex; justify-content: center;">
+        <div id="legend"></div>
+    </div>
+
+    <h2 style="text-align: center;">Top 10 Terrorist Groups</h2>
+    
+    <div style="text-align: center; margin-bottom: 10px;">
+        <label for="yearSelectBar">Select Year:</label>
+        <select id="yearSelectBar"></select>
+    </div>
+
+    <div style="display: flex; justify-content: center;">
+        <div id="barChart"></div>
+    </div>
+
+    <script src="D3_plot.js"></script>
+</body>
+</html>
